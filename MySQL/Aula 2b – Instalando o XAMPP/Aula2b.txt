@@ -1,0 +1,1 @@
+Instalando Xampp pois caso de algum problema com WampServer terei outra forma de acessar meu BD
