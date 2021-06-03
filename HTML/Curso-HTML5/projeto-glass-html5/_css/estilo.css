@@ -1,12 +1,29 @@
 @charset "UTF-8";
 body {
-    background-color: hsla(165, 81%, 93%, 0.5);
+    background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
+}
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin:  -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1225px;
+    top: 40px;
+}
+
+header#cabecalho{
+
 }
 
 /* Inicio da Formatação de imagens com legendas*/
@@ -45,7 +62,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 1250px;
+    left: 780px;
 }
 nav#menu li {
     display: inline-block;
