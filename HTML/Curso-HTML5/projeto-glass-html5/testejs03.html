@@ -1,0 +1,26 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste JavaScript</title>
+
+    <script>
+        var quebrada = false;
+        function mudaLampada(estadoLampada) {
+            if (!quebrada) { // Condição no qual o estado falso da lampada, ao se tornar verdadeiro irá manter a lampada quebrada
+                document.getElementById("luz").src = "_imagens/" + estadoLampada + ".jpg";
+                if (estadoLampada == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img id="luz" src="_imagens/lampada-apagada.jpg" onmousemove="mudaLampada('lampada-acesa')"
+        onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+</body>
+
+</html>
